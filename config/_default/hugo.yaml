@@ -1,0 +1,8 @@
+baseURL: https://luanabassi.com.br/
+languageCode: pt-BR
+defaultContentLanguage: pt
+title: My New Hugo Site
+module:
+  imports:
+    - path: github.com/gethinode/hinode
+
