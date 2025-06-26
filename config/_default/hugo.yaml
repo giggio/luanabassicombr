@@ -1,0 +1,46 @@
+baseURL: https://luanabassi.com.br/
+languageCode: pt-br
+defaultContentLanguage: pt-br
+defaultContentLanguageInSubdir: false
+title: Luana Bassi
+languages:
+  pt-br:
+    languageName: Português
+    weight: 1
+    contentDir: content
+
+module:
+  imports:
+    - path: github.com/gethinode/hinode
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    parser:
+      attribute:
+        block: true
+        title: true
+
+params:
+  description: My description
+  head:
+    tagline: filósofa
+  social:
+    title: Siga-me nas redes sociais
+    caption: Eu sou Luana Bassi, uma filósofa, ...
+  footer:
+    license: "Licenciado sob Creative Commons (<a href='https://creativecommons.org/licenses/by-sa/4.0/' class='link-secondary' target='_blank' rel='noopener noreferrer nofollow'>CC BY-SA 4.0</a>)."
+  main:
+    endorse: false
+    description: My description
+  navigation:
+    logo: /img/logo-small.svg
+    logo-height: 30
+    searchModal: true
+    offset: 3.5rem
+  favicon:
+    logo: /img/favicon-luana.png
+  style:
+    themeFontPath: "https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    themeFont: "PT Serif, Times New Roman, serif"

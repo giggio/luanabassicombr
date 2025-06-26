@@ -1,0 +1,174 @@
+:root {
+  --card-img-filter: invert(32%) sepia(1%) saturate(1893%) hue-rotate(340deg) brightness(97%) contrast(91%);
+  --botao-fundo-branco-bg: rgba(255, 255, 255, 0.4);
+  --bs-body-color: #565250;
+  --botao-fundo-branco-cor: black;
+}
+@include color-mode(dark) {
+  --card-img-filter: invert(100%) sepia(94%) saturate(0%) hue-rotate(217deg) brightness(105%) contrast(107%);
+  --botao-fundo-branco-bg: rgba(255, 255, 255, 0.12);
+  --bs-body-color: #fff;
+  --botao-fundo-branco-cor: white;
+}
+
+@include color-mode(light) {
+  .main > div.container-xxl:has(.home-page-top) {
+    background-color: #fff8f1;
+    padding-bottom: 0 !important;
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+nav.navbar {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.home-page-trilhas {
+  background-color: var(--bs-body-bg);
+}
+
+.home-cards {
+  padding-bottom: 2rem;
+  border: unset;
+  @include media-breakpoint-up(sm) {
+    display: block;
+  }
+  @include media-breakpoint-up(md) {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .card-hr {
+    color: #be8348;
+    &:last-child {
+      display: none;
+    }
+  }
+  .card {
+    @include media-breakpoint-down(md) {
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+    }
+    text-align: center;
+    align-items: center;
+    border: unset;
+    .card-body {
+      padding-bottom: 0;
+    }
+    .card-title {
+      font-size: 1.25rem !important;
+      margin-top: 0;
+    }
+    .card-img-bg {
+      background-color: unset;
+      height: 3rem;
+      width: auto;
+      filter: var(--card-img-filter);
+    }
+    .card-footer {
+      background: unset !important;
+      border: unset !important;
+    }
+    .card-button-wrapper {
+      justify-content: center;
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      right: 0;
+      padding: 0rem;
+    }
+    .card-button {
+      color: var(--bs-body-color);
+      font-weight: bold;
+      border-color: var(--bs-body-color);
+      width: 130px;
+      background: var(--botao-fundo-branco-bg);
+    }
+  }
+}
+
+.botao-manifesto {
+  color: var(--bs-body-color);
+  border-color: var(--bs-body-color);
+  background: var(--botao-fundo-branco-bg);
+}
+
+img.home-ramos {
+  max-width: 4rem;
+  display: block;
+  margin: 1rem auto;
+  filter: var(--card-img-filter);
+}
+
+.home-hero {
+  position: relative;
+  padding: 0px;
+  margin-bottom: 2rem;
+  &-image-wrapper {
+    background-color: white;
+  }
+  &-image {
+    mask-composite: subtract;
+    mask-image: linear-gradient(white, white), url(/img/logo-mask.svg);
+    mask-mode: luminance, luminance;
+    mask-repeat: repeat, no-repeat;
+    mask-size: cover, 15%;
+    mask-position: center, right 10% bottom 5%;
+  }
+  &-text {
+    z-index: 1;
+    font-weight: bold;
+    @include media-breakpoint-up(lg) {
+      top: 50%;
+    }
+    @include media-breakpoint-up(md) {
+      color: #fff;
+      position: absolute;
+      top: 54%;
+      left: 13%;
+      width: 20rem;
+    }
+    @include media-breakpoint-down(md) {
+      color: unset;
+      text-align: center;
+    }
+  }
+  &-title {
+    margin: 0;
+    @include media-breakpoint-up(md) {
+      font-size: 2.5rem;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 2.0rem;
+    }
+  }
+  &-subtitle1, &-subtitle2 {
+    margin: 0;
+    font-size: 1.5rem;
+    @include media-breakpoint-down(md) {
+      font-size: 1.3rem;
+    }
+  }
+  &-link-wrapper {
+    margin-top: 2rem;
+    @include media-breakpoint-down(lg) {
+      margin-top: 1rem;
+    }
+    @include media-breakpoint-down(md) {
+      margin-top: 0rem;
+    }
+  }
+  &-link {
+    text-decoration: none;
+    color: unset;
+    &:hover {
+      text-decoration: underline;
+    }
+    @include media-breakpoint-up(md) {
+      font-size: 1.2rem;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 1rem;
+    }
+  }
+}

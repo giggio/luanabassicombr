@@ -1,0 +1,22 @@
+main:
+  - name: Quem é Luana
+    pageRef: /about/
+    weight: 10
+  - name: Filosofia clínica
+    pageRef: /filosofia-clinica/
+    weight: 20
+  - name: Escritos
+    pageRef: /escritos-filosoficos/
+    weight: 30
+  - name: Jardim & viagens
+    pageRef: /jardim-e-viagens/
+    weight: 40
+social:
+  - name: Instagram
+    pre: fab instagram
+    url: 'https://www.instagram.com/luanahoje/'
+    weight: 10
+  - name: WhatsAp-p
+    pre: fab whatsapp
+    url: 'https://wa.me/5511942112205?text=Olá, vim pelo site'
+    weight: 20

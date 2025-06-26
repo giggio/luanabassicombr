@@ -1,0 +1,10 @@
+# Feature
+- id: alternativeFeature
+  translation: "Use `{{ . }}` em seu lugar"
+# Hero
+- id: backgroundImage
+  translation: "Imagem de fundo"
+# Nav & Tab
+- id: clickToExpand
+  translation: "Clique para expandir"
+

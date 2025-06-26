@@ -1,0 +1,26 @@
+<div class="card">
+  {{- if eq (path.Ext (.Get "icon")) ".svg" -}}
+    <img src="{{ .Get "icon" }}" class="card-img-bg" alt="{{ .Get "alt" }}">
+  {{- else -}}
+    {{- partial "assets/image.html" (dict
+      "src" (.Get "icon")
+      "title" (.Get "alt")
+      "class" "card-img-bg"
+    ) -}}
+  {{- end -}}
+  <div class="card-body">
+    <h5 class="card-title">{{ .Get "title" }}</h5>
+    <p class="card-text">{{ .Inner }}</p>
+  </div>
+  <div class="card-footer">
+    {{- partial "assets/image.html" (dict
+      "src" (.Get "image")
+      "title" "Luana no jardim"
+      "class" "card-img card-image-bottom"
+    ) -}}
+    <div class="card-button-wrapper">
+      <a href="{{ .Get "path" }}" class="btn card-button">{{ .Get "button-label" }}</a>
+    </div>
+  </div>
+</div>
+<hr class="d-lg-none d-xl-block card-hr">

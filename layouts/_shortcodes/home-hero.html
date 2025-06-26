@@ -1,0 +1,17 @@
+<div class="home-hero">
+  <div class="home-hero-text">
+    <p class="home-hero-title">{{ .Get "title" }}</p>
+    <p class="home-hero-subtitle1">{{ .Get "subtitle1" }}</p>
+    <p class="home-hero-subtitle2">{{ .Get "subtitle2" }}</p>
+    <p class="home-hero-link-wrapper">
+      <a class="home-hero-link" href="{{ .Get "link-path" }}">{{ .Get "link-text" }}</a>
+    </p>
+  </div>
+  <div class="home-hero-image-wrapper">
+    {{- partial "assets/image.html" (dict
+        "src"      "img/luana-jardim.jpg"
+        "title"    "Luana no jardim"
+        "class" "home-hero-image"
+    ) -}}
+  </div>
+</div>
