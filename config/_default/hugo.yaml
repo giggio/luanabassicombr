@@ -1,10 +1,10 @@
 baseURL: https://luanabassi.com.br/
 languageCode: pt-br
-defaultContentLanguage: pt
+defaultContentLanguage: pt-br
 defaultContentLanguageInSubdir: false
 title: My New Hugo Site
 languages:
-  pt:
+  pt-br:
     languageName: Português
     weight: 1
     contentDir: content
