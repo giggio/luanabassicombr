@@ -2,7 +2,7 @@ baseURL: https://luanabassi.com.br/
 languageCode: pt-br
 defaultContentLanguage: pt-br
 defaultContentLanguageInSubdir: false
-title: My New Hugo Site
+title: Luana Bassi
 languages:
   pt-br:
     languageName: Português
@@ -10,6 +10,16 @@ languages:
     contentDir: content
     params:
       description: My description
+      head:
+        tagline: A Hugo Theme
+      social:
+        title: Siga-me nas redes sociais
+        caption: Eu sou Luana Bassi, uma filósofa, ...
+      footer:
+        license: "Licenciado sob Creative Commons (<a href='https://creativecommons.org/licenses/by-nc-sa/4.0/' class='link-secondary' target='_blank' rel='noopener noreferrer nofollow'>CC BY-NC-SA 4.0</a>)."
+      main:
+        endorse: false
+
 module:
   imports:
     - path: github.com/gethinode/hinode
