@@ -1,12 +1,11 @@
 ---
-author: Luana de tal
+author: Luana Bassi
 date: 2025-06-26T01:44:16-03:00
 title: Meu Primeiro Post
 description: |
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sapien iaculis,
   sagittis turpis a, dictum mi.
-categories:
-- teste
+keywords: ["featured"]
 tags:
 - foo
 ---
