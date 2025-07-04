@@ -1,13 +1,15 @@
 ---
-author: Mark Dumay
-title: Welcome to Hinode!
-description: A clean documentation and blog theme for your Hugo site based on Bootstrap 5.
+author: Luana Bassi
+title: Luana Bassi
+description: Um site em que a Luana ...
 content_blocks:
   - _bookshop_name: hero
     heading:
       title: Welcome to Hinode!
       content: |-
-        A clean documentation and blog theme for your Hugo site based on Bootstrap 5.
+        Um site em que a Luana ...
+        Nullam eu augue nec ipsum euismod mattis.
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
       width: 6
     background:
       color: primary
@@ -17,7 +19,7 @@ content_blocks:
       ratio: 16x9
     width: 8
     links:
-      - title: About
+      - title: Sobre
         url: about
         icon: fas chevron-right
     orientation: horizontal
