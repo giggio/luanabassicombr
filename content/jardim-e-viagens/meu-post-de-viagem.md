@@ -15,6 +15,10 @@ planto e colho.
 
 ## O que é um jardim?
 
+![](meu-post-de-viagem.assets/DSC_7576.JPG)
+
+
+
 Um jardim é um espaço cultivado onde plantas, flores e árvores são
 cuidadosamente plantadas e cuidadas. É um lugar de beleza, tranquilidade e
 conexão com a natureza. Jardins podem variar em tamanho e estilo, desde
