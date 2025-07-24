@@ -15,7 +15,7 @@ planto e colho.
 
 ## O que é um jardim?
 
-![](meu-post-de-viagem.assets/DSC_7576.JPG)
+![](./DSC_7576.JPG)
 
 
 
